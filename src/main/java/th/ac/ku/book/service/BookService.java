@@ -18,8 +18,8 @@ public class BookService {
     }
 
     public Book create(Book book) {
-        repository.save(book);
-        return book;
+        Book record = repository.save(book);
+        return record;
     }
 
     public Book getRestaurant(int id) {
